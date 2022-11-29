@@ -4,13 +4,8 @@ using System.IO;
 using ConfigYamlTest;
 using Microsoft.Extensions.Configuration;
 
-namespace BlueDoge.Bot
+namespace ConfigYamlTest
 {
-	[Serializable]
-	public class CommandLineArgumentsException : Exception
-	{
-	}
-
 	public class Program
 	{
 		static void Main(string[] args)
