@@ -18,6 +18,10 @@ namespace BlueDoge.Bot
 			var config = new Configurator();
 			var data = config.GetData();
 			Console.WriteLine(data.GetDebugView());
+			Console.WriteLine("...");
+
+			// post all the names, idk just a test of functionality
+			data.GetSection("test").GetChildren().ToList().ForEach(child => Console.WriteLine(child["name"]));
 		}
 	}
 }
